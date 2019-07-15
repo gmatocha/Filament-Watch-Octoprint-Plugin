@@ -1,0 +1,34 @@
+
+<div class="row-fluid">
+	<div id="extrudedLength-graph"></div>
+</div>
+
+
+<table>
+	<tr><td>Summary</td><td id="summary"></td></tr>
+	<tr><td>Printing</td><td id="printing"></td></tr>
+	<tr><td>Armed</td><td id="armed"></td></tr>
+	<tr><td>Alarm</td><td id="alarm"></td></tr>
+	<tr><td>GCODE Forecast</td><td id="gcode_forecast_pos"></td></tr>
+	<tr><td>Measured Length</td><td id="measured_pos"></td></tr>
+	<tr><td>GCODE Commanded</td><td id="gcode_pos"></td></tr>
+	<tr><td>Allowed Deviation</td><td id="allowed_deviation"></td></tr>
+	<tr><td>Current Feedrate</td><td id="feed_rate"></td></tr>
+</table>
+
+<p>
+	<br/>
+	<div class="row-fluid" id="ArmDisarmButton" style="text-align: center;">
+		<button class="btn" data-bind="click:ToggleArmDisarm,
+						enable: controlViewModel.isOperational() && loginStateViewModel.isUser() && ClientSidePrinting(),
+						text: ClientSideArmed() ? 'Disarm' : 'Arm'">
+		</button>
+		<button class="btn" data-bind="click:CorrectDriftNow,
+						enable: controlViewModel.isOperational() && loginStateViewModel.isUser() && ClientSidePrinting(),
+						text: 'Correct Drift Now'">
+		</button>
+	</div>
+	<br/>
+</p>
+
+<div id="log_msgs"></div>

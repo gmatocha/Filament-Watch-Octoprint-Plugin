@@ -1,0 +1,120 @@
+<!--
+<h3>{{ _('Filament Watch') }}</h3>
+-->
+<h3>Filament Watch</h3>
+<form class="form-horizontal">
+	
+	<h4>General</h4>
+	<hr>
+	
+    <div class="control-group">
+        <div class="controls" data-toggle="tooltip" title="{{ _('Enable or disable filament watch.') }}">
+            <label class="checkbox">
+                <input type="checkbox" data-bind="checked: settings.plugins.filamentwatch.sensor_enabled"> {{ _('Enabled') }}
+            </label>
+        </div>
+    </div>
+
+	<div class="control-group">
+        <label class="control-label">{{ _('Window Duration:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('How many seconds of data is shown in the graph.') }}">
+            <input type="number" step="any" min="0" class="input-mini text-right" data-bind="value: settings.plugins.filamentwatch.windowduration">
+        </div>
+    </div>
+	
+
+	<h4>Rotary Encoder Config</h4>
+	<hr>
+
+    <div class="control-group">
+        <label class="control-label">{{ _('Wheel Diameter:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('Diameter of your rotory encoder filament wheel.') }}">
+            <input type="number" step="any" min="0" class="input-mini text-right" data-bind="value: settings.plugins.filamentwatch.WheelDia">
+        </div>
+    </div>
+	
+    <div class="control-group">
+        <label class="control-label">Rotation Direction</label>
+        <div class="controls">
+            <label class="radio">
+                <input type="radio" name="RotationDirectionGroup" value="DirCCWPositive" data-bind="checked: settings.plugins.filamentwatch.RotPositiveDir"> Counter-Clockwise Positive
+            </label>
+            <label class="radio">
+                <input type="radio" name="RotationDirectionGroup" value="DirCWPositive" data-bind="checked: settings.plugins.filamentwatch.RotPositiveDir"> Clockwise Positive
+            </label>
+        </div>
+    </div>
+
+
+	<h4>Comm Settings</h4>
+	<hr>
+
+    <div class="control-group">
+        <label class="checkbox" data-toggle="tooltip" title="{{ _('Autmaticall try to find Rotary Encoder on all USB ports.') }}">
+            <input type="checkbox" data-bind="checked: settings.plugins.filamentwatch.SearchForSensor"> {{ _('Search For Sensor on all ports.') }}
+        </label>
+		
+        <label class="control-label">{{ _('Rotary Encoder USB Device:') }}</label>
+        <div class="controls">
+            <textarea rows="1" class="block" data-bind="value: settings.plugins.filamentwatch.USBDevice"></textarea>
+        </div>
+		<br>
+        <label class="control-label">{{ _('Rotary Encoder Baudrate:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('Baudrate the Ardiono device is set for.') }}">
+			<select class="select-mini" data-bind="value: settings.plugins.filamentwatch.baudrate">
+                <option value=9600>{{ _('9600') }}</option>
+                <option value=115200>{{ _('115200') }}</option>
+            </select>
+        </div>
+		<br>
+		<div class="control-group">
+			<label class="control-label">{{ _('Out of filament GCODE:') }}</label>
+			<div class="controls" data-toggle="tooltip" title="{{ _('GCODE to send when filament stops (sent after pause or cancel) in ADDITION to Pause script (recommended).') }}">
+				<textarea rows="4" class="block" data-bind="value: settings.plugins.filamentwatch.no_filament_gcode"></textarea>
+			</div>
+		</div>
+		
+    </div>
+
+	<h4>Alarm Config</h4>
+	<hr>
+
+	<div class="control-group">
+        <label class="control-label">{{ _('Allowed Deviation (mm):') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('How many mm the measured filament can deviate from gcode before an alarm is triggered.') }}">
+            <input type="number" step="any" min="1" class="input-mini text-right" data-bind="value: settings.plugins.filamentwatch.ErrorOnDeviationmm">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">{{ _('Drift Correction Interval:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _("In Seconds. Peridically 'force' measured length to the GCODE measurement. This corrects for slow drift caused by accumulated small errors over long print times.") }}">
+            <input type="number" step="any" min="0" class="input-mini text-right" data-bind="value: settings.plugins.filamentwatch.driftCorrectionInterval">
+        </div>
+    </div>
+	
+	<div class="control-group">
+        <label class="control-label">{{ _('Arm After Seconds:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('How long after print started before alarm is armed.') }}">
+            <input type="number" step="any" min="0" class="input-mini text-right" data-bind="value: settings.plugins.filamentwatch.ArmAlarmDelay">
+        </div>
+		<div class="controls" data-toggle="tooltip" title="{{ _('Forces no error condition when arming happens. Set this if measurements start poorly, then track well once running.') }}">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.filamentwatch.CorrectDriftOnArm"> {{ _('Reset measured length on Armed') }}
+			</label>
+		</div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">{{ _('Alarm Action:') }}</label>
+        <div class="controls" data-toggle="tooltip" title="{{ _('What to do when an alarm is triggered.') }}">
+			<select class="select-mini" data-bind="value: settings.plugins.filamentwatch.alarmaction">
+                <option value="pause">{{ _('Pause') }}</option>
+                <option value="cancel">{{ _('Cancel') }}</option>
+                <option value="gcodeonly">{{ _('Only Send GCode') }}</option>
+            </select>
+        </div>
+    </div>
+
+	
+</form>
