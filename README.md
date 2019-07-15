@@ -86,14 +86,15 @@ git clone https://github.com/rllynch/filament_watch.git
 After installation, configure the plugin via OctoPrint Settings interface.
 
 ### Pause and Resume Scripts
-In addition to preventing wasted filament after a feed problem, Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use Octoprints GCODE Scrpting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
+In addition to preventing wasted filament after a feed problem, in many cases Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use Octoprints GCODE Scrpting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
 
-Copy the scrtips below into the After print job is paused, and Before print job is resumed fields in Octoprint->Settings->GCODE Scripts
+Copy the scripts below into the **After print job is paused**, and **Before print job is resumed** fields in *Octoprint->Settings->GCODE Scripts*
 
-![](https://github.com/)
+![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/PauseResumeScript.png)
 
 
-#### Pause
+#### After print job is paused
+```
 ; From 
 {% if pause_position.x is not none %}
 ; relative XYZE
@@ -117,19 +118,78 @@ G1 X0 Y0
 
 {% endif %}
 
-; play a jaunty tune
+; play a jaunty tune (if your printer speaks)
 M300 S440 P400
 M300 S660 P400
 M300 S660 P1000
 M300 S440 P1000
 M300 S660 P1000
 M300 S440 P1000
+```
 
-#### Resume
+#### Before print job is resumed
+```
+{% if pause_position.x is not none %}
 
+; turn filament heaters back on
+{% for tool in range(printer_profile.extruder.count) %}
+    {% if pause_temperature[tool] and pause_temperature[tool]['target'] is not none %}
+        {% if tool == 0 and printer_profile.extruder.count == 1 %}
+            M109 T{{ tool }} S{{ pause_temperature[tool]['target'] }}
+        {% else %}
+            M109 S{{ pause_temperature[tool]['target'] }}
+        {% endif %}
+    {% else %}
+        {% if tool == 0 and printer_profile.extruder.count == 1 %}
+            M104 T{{ tool }} S0
+        {% else %}
+            M104 S0
+        {% endif %}
+    {% endif %}
+{% endfor %}
 
+; relative extruder
+M83
+
+; prime nozzle
+G1 E-5 F4500
+G1 E5 F4500
+G1 E5 F4500
+
+; absolute E
+M82
+; absolute XYZ
+;G90
+
+; reset E
+G92 E{{ pause_position.e }}
+
+; move back to pause position XY
+G1 X{{ pause_position.x }} Y{{ pause_position.y }} F1500
+; then move back to pause position Z to minimize risk of bumping part off bed
+G1 Z{{ pause_position.z }} F1500
+
+; reset to feed rate before pause if available
+{% if pause_position.f is not none %}G1 F{{ pause_position.f }}{% endif %}
+{% endif %}
+```
 ## Tuning
-As the print runs, FilamentWatch will monitor accumulated errors and make suggestions for
+As the print runs, FilamentWatch will monitor accumulated errors and make suggestions for dialing in the exact rotary encoder diameter. Check this test in the Filament Watch logs:
+![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
+
+Notes:
+* At the beginning of the print, this suggested diameter will usually be way off, but will close in on the correct value after a while.
+* Ironically, prints with many short moderatly paced moves will produce a more accutate suggested diameter than prints with long slow extrusions. This is because forecasting must be used on the long slow prints, while short fast prints mean sent and measured lengths stay closer.
+
 
 ## Using Filament Watch reliably
+I'll be honest with you...get ready. You very likely don't want to use Filament Watch. Boom. Filament monitoring seems like a no-brainer right? Throw in a rotary encoder to watch for failures and your print reliability goes up. Measure what moves and compare to what's told to move...simple right? Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can save 1 in 20 prints. But if Filament Watch has the same error rate - false positive errros on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects the true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hinderance. Throw in the fact that there are so many printers, so many different firmwares with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer - relative vs. absolute mode? Linear vs. arc moves? Slow vs. fast moves? This means what Octoprint sends is almost never srncronized with the real world (which is what Filament Watch sees) some times not. even. close. At this point the brain melts.
 
+So is all lost? No, not at all, but expectations must be set.
+You can assume similar prints will behave similarly, but don't assume that about different prints. What does "similar" mean?
+Same printer and slicer? Obviously
+Similar speed? Yes
+Similar layer height? Yes
+Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume printed cube given all the same settings.
+
+So here's my suuggestion for success with Filament Watch:
