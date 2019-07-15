@@ -84,3 +84,52 @@ git clone https://github.com/rllynch/filament_watch.git
 ## Configuration
 
 After installation, configure the plugin via OctoPrint Settings interface.
+
+### Pause and Resume Scripts
+In addition to preventing wasted filament after a feed problem, Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use Octoprints GCODE Scrpting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
+
+Copy the scrtips below into the After print job is paused, and Before print job is resumed fields in Octoprint->Settings->GCODE Scripts
+
+![](https://github.com/)
+
+
+#### Pause
+; From 
+{% if pause_position.x is not none %}
+; relative XYZE
+G91
+M83
+
+; retract filament, move Z slightly upwards
+G1 Z+5 E-1.5 F4500
+
+; absolute XYZE
+M82
+G90
+; move to a safe rest position, adjust as necessary
+G1 X0 Y0
+
+; Home X and Y only
+;G28 X Y
+
+;disable heater, but not bed because we want to keep adhesion
+{% snippet 'disable_hotends' %}
+
+{% endif %}
+
+; play a jaunty tune
+M300 S440 P400
+M300 S660 P400
+M300 S660 P1000
+M300 S440 P1000
+M300 S660 P1000
+M300 S440 P1000
+
+#### Resume
+
+
+## Tuning
+As the print runs, FilamentWatch will monitor accumulated errors and make suggestions for
+
+## Using Filament Watch reliably
+
