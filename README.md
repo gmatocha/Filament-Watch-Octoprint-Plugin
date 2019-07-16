@@ -1,7 +1,7 @@
 # Filament Watch Octoprint Plugin
 
 Initial work based on the [Filament Watch](https://github.com/rllynch/filament_watch) plugin by RLLynch.
-![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
 
 ## Features
 
@@ -172,7 +172,7 @@ G1 Z{{ pause_position.z }} F1500
 
 ## Using Filament Watch
 
-![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/GraphOnly.png)
 
 ### The Graph:
 The graph on the Filament Watch tab shows four values:
@@ -180,6 +180,8 @@ The graph on the Filament Watch tab shows four values:
 * Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in settings). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
 * GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch is using when detemining whether an alarm condition has occurred.
 * Alarm Boundry (green area): GCode Forecast +/- Allowed Deviation from settings plus an additional deviation allowance calulated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
+
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
 ### Values Table
 ### Log
