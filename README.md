@@ -222,10 +222,10 @@ Here are my suggestion for success with Filament Watch:
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it cal also be an important diagnostic tool. 
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the LArge Slow Perimeter file in the models\Test Models direcrtory, for example)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzE4NzU0OCwtMTcyNjk5MTMyNSwxNT
-QyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYx
-OTE1XX0=
+eyJoaXN0b3J5IjpbLTEwMzQzODczMzAsLTE3MjY5OTEzMjUsMT
+U0MjQ0ODUxMSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2
+MTkxNV19
 -->
