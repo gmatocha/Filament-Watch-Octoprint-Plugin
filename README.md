@@ -236,7 +236,7 @@ M300 S600 P700
 	- Same printer and slicer? Obviously
 	- Similar speed? Yes
 	- Same layer height? Yes
-	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
+	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube, even with identical print settings.
 	
 * Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 50mm boundary might only delay an alarm by 30 seconds...which won't make a difference between a salvageable and failed print. But it might prevent a false alarm that does fail the print.
 * The same goes for the drift correction interval - a fast (say 120 second) drift correction might delay some alarms, but will make false alarms less likely.
@@ -249,8 +249,8 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTYzNjk4MiwzMTc0Njk0MTEsLTE3NT
-Q2NzExMCwtODU4NDg2ODI3LC0xNzI2OTkxMzI1LDE1NDI0NDg1
-MTEsMjgxNjEwMDIsLTExMjg3NjIxODEsLTEyNjI0NjE5MTVdfQ
-==
+eyJoaXN0b3J5IjpbODk0MzE4MDczLDE3Njk2MzY5ODIsMzE3ND
+Y5NDExLC0xNzU0NjcxMTAsLTg1ODQ4NjgyNywtMTcyNjk5MTMy
+NSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMj
+YyNDYxOTE1XX0=
 -->
