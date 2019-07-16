@@ -32,9 +32,9 @@ Using this plugin requires a rotary encoder sensor, and an Arduino micro control
 
 4. Optional: 2 x 0.1" pitch header blocks [[Adafruit link]](https://www.adafruit.com/products/2142)
 
-5. Optional: (depending on case you use) 608 ball bearing [[Amazon link]](https://www.amazon.com/Groove-Bearing-Bearings-Skateboard-Printer/dp/B07FGVFN6F). You don't need anything fancy here - don't spend money on ceramic or high abec bearings. Old dead ones will work as long as they roll smoothly.
+5. Optional: (depending on case you use) 608 ball bearing [[Amazon link]](https://www.amazon.com/Groove-Bearing-Bearings-Skateboard-Printer/dp/B07FGVFN6F). These are the same bearings used in skates and skateboard wheels. You don't need anything fancy here - don't spend money on ceramic or high abec bearings. Old dead ones will work as long as they roll smoothly.
 
-6. Optional: 30mm Rotary Encoder wheel [[Ali Express Link]](https://www.aliexpress.com/item/32974396980.html). The enclosure stl files below include a wheel stl that is designed for the enclosure, and is usually printed in a soft material like TPU/Ninjaflex. Manufactured wheels are higher quality, but generally not so much as to affect Filament Watch. If you do use a manufactured wheel, choose a case that is designed it.
+6. Optional: 30mm Rotary Encoder wheel [[Ali Express Link]](https://www.aliexpress.com/item/32974396980.html). The enclosure stl files below include a wheel stl that is designed for the enclosure, and is usually printed in a soft material like TPU/Ninjaflex. Manufactured wheels are higher quality, but generally not so much as to affect Filament Watch. If you do use a manufactured wheel, choose a case that is designed for it.
 
 
 ## Printed parts - Enclosures and wheels:
@@ -208,5 +208,6 @@ Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small 
 
 So here's my suggestion for success with Filament Watch:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI0NjE5MTVdfQ==
+eyJoaXN0b3J5IjpbLTExMjg3NjIxODEsLTEyNjI0NjE5MTVdfQ
+==
 -->
