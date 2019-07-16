@@ -186,6 +186,7 @@ The graph on the Filament Watch tab shows four values:
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
 ### Values Table
+
 ### Log
 The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
 
@@ -231,13 +232,13 @@ M300 S600 P700
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. **But it can also be an important diagnostic tool.** I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing. Now just to find a solution... ;)
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. **But it can also be an important diagnostic tool.** I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52% and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing. Now just to find a solution... ;)
 
 Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjQ0NjYzODQsLTg1ODQ4NjgyNywtMT
+eyJoaXN0b3J5IjpbLTE2OTcxMjcwNTksLTg1ODQ4NjgyNywtMT
 cyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYy
 MTgxLC0xMjYyNDYxOTE1XX0=
 -->
