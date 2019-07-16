@@ -219,8 +219,13 @@ So here's my suggestion for success with Filament Watch:
     M114 S600 P700
     M114 S400 P700
     M114 S600 P700
-* Don't rely on Filament Watch 
+* Don't rely on Filament Watch until you've verified it with the same or similar models. What does "similar" mean?
+	- Same printer and slicer? Obviously
+	- Similar speed? Yes
+	- Similar layer height? Yes
+	- 
+Similar model? Yes. Huh? Why the model itself? Because a Benchy with it’s small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzU3NjYyNCwyODE2MTAwMiwtMTEyOD
-c2MjE4MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbLTE5Mzg2NzM0NzUsMjgxNjEwMDIsLTExMj
+g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
 -->
