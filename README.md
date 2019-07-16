@@ -25,8 +25,8 @@ Using this plugin requires a rotary encoder sensor, and an Arduino micro control
 * Other encoders may work, providing you come up with a suitable enclosure.
 
 2. Arduino controller supporting 5V and Serial over USB:
-* Verified: Adafruit Metro Mini 328 - 5V 16MHz [[Adafruit link]](https://www.adafruit.com/product/2590)
-* Pending Verification: (7/2019) Itsy Bitsy 32u4 5V [[Adafuit link]](https://www.adafruit.com/product/3677)
+* Verified: Adafruit Metro Mini 328 - 5V 16MHz [[Adafruit link]](https://www.adafruit.com/product/2590) [[Pinout]]()
+* Pending Verification: (7/2019) Itsy Bitsy 32u4 5V [[Adafuit link]](https://www.adafruit.com/product/3677)[[Pinouts](https://learn.adafruit.com/introducting-itsy-bitsy-32u4/pinouts)
 
 3. USB A to Micro-B cable for Arduino [[Adafuit link]](https://www.adafruit.com/product/592)
 
@@ -208,6 +208,6 @@ Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small 
 
 So here's my suggestion for success with Filament Watch:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjI3ODQxNywtMTEyODc2MjE4MSwtMT
+eyJoaXN0b3J5IjpbMTA5MDYyMzY3MiwtMTEyODc2MjE4MSwtMT
 I2MjQ2MTkxNV19
 -->
