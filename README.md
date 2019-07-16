@@ -218,7 +218,8 @@ Here are my suggestion for success with Filament Watch:
 	- Similar speed? Yes
 	- Same layer height? Yes
 	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
+* Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODQ5NjgzNCwyODE2MTAwMiwtMTEyOD
-c2MjE4MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbLTEyNTc0MDk3MDMsMjgxNjEwMDIsLTExMj
+g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
 -->
