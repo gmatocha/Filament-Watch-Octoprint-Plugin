@@ -1,6 +1,7 @@
 # Filament Watch Octoprint Plugin
 
 Initial work based on the [Filament Watch](https://github.com/rllynch/filament_watch) plugin by RLLynch.
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
 
 ## Features
 
@@ -16,74 +17,69 @@ Using this plugin requires a rotary encoder sensor, and an Arduino micro control
 * Note if you do use an encoder with other than 600P/R, the DPM value in the Arduiono code needs to be modified. Future versions will make this configurable through Octoprint.
 
 
-
 ## Purchased Parts:
 
-1) Quadrature encoder. The STL files are designed for a rotary encoder with a 38mm (dia) x 35.5mm body, 6mm shaft and capable of running on 5v, such as:
-Verified: "Signswise 600p/r Incremental Rotary Encoder Dc5-24v Wide Voltage Power Supply 6mm Shaft" [[Amazon link]](http://www.amazon.com/gp/product/B00UTIFCVA?psc=1&redirect=true&ref_=oh_aui_detailpage_o09_s00)
-  Pending verification: 
-  
-  Other encoders may work, providing you come up with a suitable enclosure.
+1. Quadrature encoder:
+  * Verified: Signswise 600p/r Incremental Rotary Encoder Dc5-24v Wide Voltage Power Supply 6mm Shaft [[Amazon link]](http://www.amazon.com/gp/product/B00UTIFCVA?psc=1&redirect=true&ref_=oh_aui_detailpage_o09_s00)
+* Pending verification: 
+* Other encoders may work, providing you come up with a suitable enclosure.
 
-2) Arduino controller supporting 5V and Serial over USB:
-  Verified: Adafruit Metro Mini 328 - 5V 16MHz [[Adafruit link]](https://www.adafruit.com/product/2590)
-  Pending Verification (7/2019): Itsy Bitsy 32u4 5V [[Adafuit link]](https://www.adafruit.com/product/3677)
+2. Arduino controller supporting 5V and Serial over USB:
+* Verified: Adafruit Metro Mini 328 - 5V 16MHz [[Adafruit link]](https://www.adafruit.com/product/2590)
+* Pending Verification: (7/2019) Itsy Bitsy 32u4 5V [[Adafuit link]](https://www.adafruit.com/product/3677)
 
-3) USB A to Micro-B cable for Arduino [[Adafuit link]](https://www.adafruit.com/product/592)
+3. USB A to Micro-B cable for Arduino [[Adafuit link]](https://www.adafruit.com/product/592)
 
-4) Optional: 2 x 0.1" pitch header blocks [[Adafruit link]](https://www.adafruit.com/products/2142)
+4. Optional: 2 x 0.1" pitch header blocks [[Adafruit link]](https://www.adafruit.com/products/2142)
 
-5) Optional: (depending on case you use) 608 ball bearing [[Amazon link]](https://www.amazon.com/Groove-Bearing-Bearings-Skateboard-Printer/dp/B07FGVFN6F). You don't need anything fancy here - don't spend money on ceramic or high abec bearings. Old dead ones will work as long as they roll smoothly.
+5. Optional: (depending on case you use) 608 ball bearing [[Amazon link]](https://www.amazon.com/Groove-Bearing-Bearings-Skateboard-Printer/dp/B07FGVFN6F). You don't need anything fancy here - don't spend money on ceramic or high abec bearings. Old dead ones will work as long as they roll smoothly.
+
+6. Optional: 30mm Rotary Encoder wheel [[Ali Express Link]](https://www.aliexpress.com/item/32974396980.html). The enclosure stl files below include a wheel stl that is designed for the enclosure, and is usually printed in a soft material like TPU/Ninjaflex. Manufacturered wheels are higher quality, but generally not so much as to affect Filament Watch. If you do use a manufactured wheel, choose a case that is designed it.
 
 
 ## Printed parts - Enclosures and wheels:
 
 There are seveal options for the encoder housing, depending on what will work with your setup.
 
-1) RLLynch's [base and wheel](http://www.thingiverse.com/thing:936521) and optional [mini metro enclosure](http://www.thingiverse.com/thing:936519)
+1. RLLynch's [base and wheel](http://www.thingiverse.com/thing:936521) and optional [mini metro enclosure](http://www.thingiverse.com/thing:936519)
 
-2) [My housing for the D6](https://www.thingiverse.com/thing:3746948)
+2. [My housing for the D6](https://www.thingiverse.com/thing:3746948)
 
 
 ## Wiring
-
-
 
 ### Wiring instructions for the Metro Mini 328
   Optionally solder the header blocks first.
   (Note check your enclosure to see if it's compatible with the header blocks)
 
-4.1) Encoder red (power) - 5V
-
-4.2) Encoder black (ground) - GND
-
-4.3) Encoder green (output 1) - digital pin 3
-
-4.4) Encoder white (output 2) - digital pin 2
+1. Encoder red (power) - 5V
+2. Encoder black (ground) - GND
+3. Encoder green (output 1) - digital pin 3
+4. Encoder white (output 2) - digital pin 2
 
 ![](https://github.com/rllynch/filament_watch/blob/master/images/metro_mini_328_wiring.jpg)
 
-5) Connect the Metro Mini by USB to the computer running OctoPrint. Attach the wheel to the encoder and place it in the base. Feed the filament through the base.
 
-6) Check out this git repository onto the computer running OctoPrint.
-
-```
-git clone https://github.com/rllynch/filament_watch.git
-```
-
-7) Compile and flash arduino/filament_watch/filament_watch.ino into the Metro Mini using either the Arduino IDE, or the command line scripts shown below:
 
 ### Wiring instructions for the Itsy Bitsy (pending)
 
 
 ## Installation
 
-* Manually using this URL: https://github.com/p
-* From the [Octoprint Plugin repositry](https://plugins.octoprint.org/) (pending) 
+1. Install the plugin in Octoprint Settings->Plugin Manager:
+* Manually using this URL: https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin
+* From the [Octoprint Plugin repositry](https://plugins.octoprint.org/) (pending)
+
+2. Compile and flash arduino/filament_watch/filament_watch.ino into the Metro Mini using either the Arduino IDE, or the command line scripts shown below:
+
+3. Connect the Metro Mini by USB to the computer running OctoPrint. Attach the wheel to the encoder and place it in the base. Feed the filament through the base.
+
 
 ## Configuration
 
 After installation, configure the plugin via OctoPrint Settings interface.
+![Settings](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Settings.png)
+* Allowed Deviation (mm): If monotired length is more or less than the forecast gcode, 
 
 ### Pause and Resume Scripts
 In addition to preventing wasted filament after a feed problem, in many cases Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use Octoprints GCODE Scrpting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
@@ -173,12 +169,28 @@ G1 Z{{ pause_position.z }} F1500
 {% if pause_position.f is not none %}G1 F{{ pause_position.f }}{% endif %}
 {% endif %}
 ```
+
+## Using Filament Watch
+
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
+
+### The Graph:
+The graph on the Filament Watch tab shows four values:
+* GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queueing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
+* Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in settings). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
+* GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch is using when detemining whether an alarm condition has occurred.
+* Alarm Boundry (green area): GCode Forecast +/- Allowed Deviation from settings plus an additional deviation allowance calulated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
+
+### Values Table
+### Log
+The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
+
 ## Tuning
-As the print runs, FilamentWatch will monitor accumulated errors and make suggestions for dialing in the exact rotary encoder diameter. Check this test in the Filament Watch logs:
+As the print runs, Filament Watch will monitor accumulated errors and make suggestions for dialing in the exact rotary encoder diameter. Check this test in the Filament Watch logs:
 ![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
 
 Notes:
-* At the beginning of the print, this suggested diameter will usually be way off, but will close in on the correct value after a while.
+* At the beginning of the print, this suggested diameter will be way off, but will close in on the correct value the longer the print runs.
 * Ironically, prints with many short moderatly paced moves will produce a more accutate suggested diameter than prints with long slow extrusions. This is because forecasting must be used on the long slow prints, while short fast prints mean sent and measured lengths stay closer.
 
 
