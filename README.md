@@ -3,6 +3,8 @@
 Initial work based on the [Filament Watch](https://github.com/rllynch/filament_watch) plugin by RLLynch.
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
 
+[[(#Using_Filament_Watch_reliably)
+
 ## Features
 
 * Pause, cancel, or just send GCODE when filament stops
@@ -204,7 +206,7 @@ You can assume similar prints will behave similarly, but don't assume that about
 Same printer and slicer? Obviously
 Similar speed? Yes
 Similar layer height? Yes
-Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume printed cube given all the same settings.
+Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
 
 So here's my suggestion for success with Filament Watch:
 * Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beep code for Marlin based printers:
@@ -214,8 +216,8 @@ So here's my suggestion for success with Filament Watch:
     M114 S600 P700
     M114 S400 P700
     M114 S600 P700
-* Don't 
+* Don't rely on Filament Watch 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2MzE5MDAyLDI4MTYxMDAyLC0xMTI4Nz
-YyMTgxLC0xMjYyNDYxOTE1XX0=
+eyJoaXN0b3J5IjpbLTIwNjE0MTA2NTYsMjgxNjEwMDIsLTExMj
+g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
 -->
