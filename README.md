@@ -176,10 +176,10 @@ G1 Z{{ pause_position.z }} F1500
 
 ### The Graph:
 The graph on the Filament Watch tab shows four values:
-* GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queueing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
+* GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queuing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
 * Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in settings). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
-* GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch is using when detemining whether an alarm condition has occurred.
-* Alarm Boundry (green area): GCode Forecast +/- Allowed Deviation from settings plus an additional deviation allowance calulated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
+* GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch is using when determining whether an alarm condition has occurred.
+* Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from settings plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
 
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
@@ -193,11 +193,11 @@ As the print runs, Filament Watch will monitor accumulated errors and make sugge
 
 Notes:
 * At the beginning of the print, this suggested diameter will be way off, but will close in on the correct value the longer the print runs.
-* Ironically, prints with many short moderatly paced moves will produce a more accutate suggested diameter than prints with long slow extrusions. This is because forecasting must be used on the long slow prints, while short fast prints mean sent and measured lengths stay closer.
+* Ironically, prints with many short moderately paced moves will produce a more accurate suggested diameter than prints with long slow extrusions. This is because forecasting must be used on the long slow prints, while short fast prints mean sent and measured lengths stay closer.
 
 
 ## Using Filament Watch reliably
-I'll be honest with you...get ready. You very likely don't want to use Filament Watch. Boom. Filament monitoring seems like a no-brainer right? Throw in a rotary encoder to watch for failures and your print reliability goes up. Measure what moves and compare to what's told to move...simple right? Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can save 1 in 20 prints. But if Filament Watch has the same error rate - false positive errros on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects the true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hinderance. Throw in the fact that there are so many printers, so many different firmwares with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer - relative vs. absolute mode? Linear vs. arc moves? Slow vs. fast moves? This means what Octoprint sends is almost never srncronized with the real world (which is what Filament Watch sees) some times not. even. close. At this point the brain melts.
+I'll be honest with you...get ready. You very likely don't want to use Filament Watch. Boom. Filament monitoring seems like a no-brainier right? Throw in a rotary encoder to watch for failures and your print reliability goes up. Measure what moves and compare to what's told to move...simple right? Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can save 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects the true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmware with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer - relative vs. absolute mode? Linear vs. arc moves? Slow vs. fast moves? This means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees) some times not. even. close. At this point the brain melts.
 
 So is all lost? No, not at all, but expectations must be set.
 You can assume similar prints will behave similarly, but don't assume that about different prints. What does "similar" mean?
@@ -206,7 +206,7 @@ Similar speed? Yes
 Similar layer height? Yes
 Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume printed cube given all the same settings.
 
-So here's my suuggestion for success with Filament Watch:
+So here's my suggestion for success with Filament Watch:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjcyNzY1MF19
+eyJoaXN0b3J5IjpbLTEyNjI0NjE5MTVdfQ==
 -->
