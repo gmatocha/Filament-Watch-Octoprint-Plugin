@@ -220,7 +220,10 @@ Here are my suggestion for success with Filament Watch:
 	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
 * Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 50mm boundary might only delay an alarm by 30 seconds...which won't make a difference between a salvageable and failed print. But it might prevent a false alarm that does fail the print.
 * The same goes for the drift correction interval - a fast (say 120 second) drift correction might delay some alarms, but will make false alarms less likely.
+
+### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Nzk4NTgyNiwyODE2MTAwMiwtMTEyOD
+eyJoaXN0b3J5IjpbMTQyMjQ5OTYyMywyODE2MTAwMiwtMTEyOD
 c2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
