@@ -192,6 +192,9 @@ The graph on the Filament Watch tab shows four values:
  - Allowed Deviation is the width of the Alarm Boundry. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
+### Arm/Disarm and Correct Drift Now buttons
+Arm/Disarm
+
 ### Log
 The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
 
@@ -218,7 +221,7 @@ Sometimes it's not. even. close.
 So is all lost? No, not at all. But expectations must be set.
 
 #### Here are my suggestion for success with Filament Watch:
-* Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beeps for Marlin based printers:
+* Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here're some beeps for Marlin based printers:
 ```
 ; Beeps
 M300 S600 P700
@@ -243,8 +246,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTIwNDk2NTQsMzE3NDY5NDExLC0xNz
-U0NjcxMTAsLTg1ODQ4NjgyNywtMTcyNjk5MTMyNSwxNTQyNDQ4
-NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYxOTE1XX
-0=
+eyJoaXN0b3J5IjpbMTAxMzM5NzAyLDMxNzQ2OTQxMSwtMTc1ND
+Y3MTEwLC04NTg0ODY4MjcsLTE3MjY5OTEzMjUsMTU0MjQ0ODUx
+MSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
