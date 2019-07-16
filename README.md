@@ -222,10 +222,10 @@ Here are my suggestion for success with Filament Watch:
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-s
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NTY3MDQ5NSwtMTcyNjk5MTMyNSwxNT
-QyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYx
-OTE1XX0=
+eyJoaXN0b3J5IjpbLTE0Njk2ODM3MjAsLTE3MjY5OTEzMjUsMT
+U0MjQ0ODUxMSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2
+MTkxNV19
 -->
