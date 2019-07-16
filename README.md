@@ -188,8 +188,8 @@ The graph on the Filament Watch tab shows four values:
 ### Values Table
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
- - GCODE Forecast, Commanded, and Measured length show the current value - same as what's shown on [the graph](#The_Graph). the value in  parentheses is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
- - Allowed Deviation is the current "window". The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
+ - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value in  parentheses is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
+ - Allowed Deviation how wideis the current "window". The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
 ### Log
@@ -243,7 +243,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1MTg0NjI0LC04NTg0ODY4MjcsLTE3Mj
-Y5OTEzMjUsMTU0MjQ0ODUxMSwyODE2MTAwMiwtMTEyODc2MjE4
-MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbMTI4NzY1NjQ1MCwtODU4NDg2ODI3LC0xNz
+I2OTkxMzI1LDE1NDI0NDg1MTEsMjgxNjEwMDIsLTExMjg3NjIx
+ODEsLTEyNjI0NjE5MTVdfQ==
 -->
