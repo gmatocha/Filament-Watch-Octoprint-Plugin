@@ -201,8 +201,8 @@ Notes:
 ## Using Filament Watch reliably
 I'll be honest with you...get ready.
 You probably don't want to use Filament Watch. Boom.
- Filament monitoring seems like a no-brainier right? *Throw in a rotary encoder....measure what moves and compare to what's supposed to move...simple right?*
-Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can perhaps save half of those 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmware with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer, the print settings, and even the model itself.  All this means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees) sometimes it's not. even. close. At this point the brain melts.
+Filament monitoring seems like a no-brainier right? *Throw in a rotary encoder....measure what moves and compare to what's supposed to move...simple right?*
+Here's what they're not telling you. If the monitor is not **significantly **more**** reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can perhaps save half of those 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmware with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer, the print settings, and even the model itself.  All this means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees) sometimes it's not. even. close. At this point the brain melts.
 
 So is all lost? No, not at all, but expectations must be set.
 Here are my suggestion for success with Filament Watch:
@@ -222,10 +222,13 @@ Here are my suggestion for success with Filament Watch:
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing.
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing. Now just to find a solution... ;)
+
+Enjoy
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDMzNjA3NywtMTcyNjk5MTMyNSwxNT
-QyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYx
-OTE1XX0=
+eyJoaXN0b3J5IjpbLTEzOTkwMDU0NzYsLTE3MjY5OTEzMjUsMT
+U0MjQ0ODUxMSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2
+MTkxNV19
 -->
