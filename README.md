@@ -222,10 +222,10 @@ Here are my suggestion for success with Filament Watch:
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. You may 
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it cal also be an important diagnostic tool. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTgyMzU3MiwtMTcyNjk5MTMyNSwxNT
+eyJoaXN0b3J5IjpbLTQxMzE4NzU0OCwtMTcyNjk5MTMyNSwxNT
 QyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYx
 OTE1XX0=
 -->
