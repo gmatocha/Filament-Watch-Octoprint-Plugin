@@ -218,8 +218,8 @@ Here are my suggestion for success with Filament Watch:
 	- Similar speed? Yes
 	- Same layer height? Yes
 	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
-* Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 
+* Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 50mm boundary might only delay an alarm by 30 seconds...which won't make a difference between a salvageable and failed print. But it might prevent a false alarm that does fail the print.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTc0MDk3MDMsMjgxNjEwMDIsLTExMj
-g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
+eyJoaXN0b3J5IjpbLTk4NDM2OTE3OCwyODE2MTAwMiwtMTEyOD
+c2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
