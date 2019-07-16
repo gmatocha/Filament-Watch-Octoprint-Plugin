@@ -207,7 +207,8 @@ Similar layer height? Yes
 Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume printed cube given all the same settings.
 
 So here's my suggestion for success with Filament Watch:
+* Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to just beep to n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxNjEwMDIsLTExMjg3NjIxODEsLTEyNj
-I0NjE5MTVdfQ==
+eyJoaXN0b3J5IjpbLTEwMDE5NjU1NTUsMjgxNjEwMDIsLTExMj
+g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
 -->
