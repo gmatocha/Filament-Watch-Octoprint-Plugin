@@ -48,7 +48,7 @@ There are several options for the encoder housing, depending on what will work w
 
 ## Wiring
 
-### Wiring instructions for the Metro Mini 328
+### Wiring instructions for the Metro Mini 328 or Itsy Bitsy 5v
   Optionally solder the header blocks first.
   (Note check your enclosure to see if it's compatible with the header blocks)
 
@@ -208,6 +208,6 @@ Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small 
 
 So here's my suggestion for success with Filament Watch:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg3NjIxODEsLTEyNjI0NjE5MTVdfQ
-==
+eyJoaXN0b3J5IjpbMTMwMjI3ODQxNywtMTEyODc2MjE4MSwtMT
+I2MjQ2MTkxNV19
 -->
