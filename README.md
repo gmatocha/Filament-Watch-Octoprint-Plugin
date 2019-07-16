@@ -200,7 +200,6 @@ As the print runs, Filament Watch will monitor accumulated errors and make sugge
 
 ![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
 
-Notes:
 * At the beginning of the print, this suggested diameter will be way off, but will close in on the correct value the longer the print runs.
 * Ironically, prints with many short moderately paced moves will produce a more accurate suggested diameter than prints with long slow extrusions. This is because forecasting must be used on the long slow prints, while short fast prints mean sent and measured lengths stay closer.
 
@@ -214,7 +213,7 @@ Filament monitoring seems like a no-brainier right? *Throw in a rotary encoder..
 
 Here's what they're not telling you. If the monitor is not **significantly *more*** reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many it won't). Ok great, we can perhaps save half of those 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even when it accurately detects true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmwares with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer, the print settings, and the model itself.  All this means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees).
 
-Sometimes it's not. even. close. At this point the brain melts.
+Sometimes it's not. even. close.
 
 So is all lost? No, not at all. But expectations must be set.
 
@@ -244,7 +243,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTY2NTM4MDYsMzE3NDY5NDExLC0xNz
+eyJoaXN0b3J5IjpbLTEzNTIwNDk2NTQsMzE3NDY5NDExLC0xNz
 U0NjcxMTAsLTg1ODQ4NjgyNywtMTcyNjk5MTMyNSwxNTQyNDQ4
 NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYxOTE1XX
 0=
