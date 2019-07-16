@@ -188,7 +188,7 @@ The graph on the Filament Watch tab shows four values:
 ### Values Table
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
- - GCODE Forecast, Commanded, an
+ - GCODE Forecast, Commanded, and Measured length show the current value - same as what's shown on the graph. the value in  parentheses is the instantaneous extrusion rate in mm per second. This is useful when di
 
 ### Log
 The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
@@ -241,7 +241,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU0ODUzNTksLTg1ODQ4NjgyNywtMT
-cyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYy
-MTgxLC0xMjYyNDYxOTE1XX0=
+eyJoaXN0b3J5IjpbMTA2OTk2MTQ3NSwtODU4NDg2ODI3LC0xNz
+I2OTkxMzI1LDE1NDI0NDg1MTEsMjgxNjEwMDIsLTExMjg3NjIx
+ODEsLTEyNjI0NjE5MTVdfQ==
 -->
