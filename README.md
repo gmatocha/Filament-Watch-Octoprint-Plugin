@@ -196,7 +196,8 @@ The graph on the Filament Watch tab shows four values:
 The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
 
 ## Tuning
-As the print runs, Filament Watch will monitor accumulated errors and make suggestions for dialing in the exact rotary encoder diameter. Check this test in the Filament Watch logs:
+As the print runs, Filament Watch will monitor accumulated errors and make suggestions for dialing in the exact rotary encoder diameter. Look for this value in the Filament Watch logs (circled below):
+
 ![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor_SuggestedDia.png)
 
 Notes:
@@ -243,7 +244,8 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3NDY5NDExLC0xNzU0NjcxMTAsLTg1OD
-Q4NjgyNywtMTcyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAy
-LC0xMTI4NzYyMTgxLC0xMjYyNDYxOTE1XX0=
+eyJoaXN0b3J5IjpbLTExMTY2NTM4MDYsMzE3NDY5NDExLC0xNz
+U0NjcxMTAsLTg1ODQ4NjgyNywtMTcyNjk5MTMyNSwxNTQyNDQ4
+NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYxOTE1XX
+0=
 -->
