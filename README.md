@@ -223,9 +223,9 @@ Here are my suggestion for success with Filament Watch:
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. 
+Yes. You may 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjQ0ODUxMSwyODE2MTAwMiwtMTEyOD
-c2MjE4MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbLTE3MjY5OTEzMjUsMTU0MjQ0ODUxMSwyOD
+E2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
