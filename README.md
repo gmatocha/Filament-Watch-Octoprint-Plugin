@@ -187,6 +187,9 @@ The graph on the Filament Watch tab shows four values:
 
 ### Values Table
 
+ - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
+ - GCODE Forecast, Commanded, an
+
 ### Log
 The section at the bottom shows the last 10 Filament Watch log lines, including drift corrections. See [](#Tuning) below.
 
@@ -238,7 +241,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcxMjcwNTksLTg1ODQ4NjgyNywtMT
+eyJoaXN0b3J5IjpbLTEwODU0ODUzNTksLTg1ODQ4NjgyNywtMT
 cyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYy
 MTgxLC0xMjYyNDYxOTE1XX0=
 -->
