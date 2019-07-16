@@ -181,7 +181,7 @@ The graph on the Filament Watch tab shows four values:
 * GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queuing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
 * Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in [settings](#Configuration)). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
 * GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch uses when determining whether an alarm condition has occurred.
-* Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from [settings](#Configuration) plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
+* Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from [settings](#Configuration) plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Length goes outside this value, an alarm is triggered. Note this value is dynamic; 
 
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
@@ -189,7 +189,7 @@ The graph on the Filament Watch tab shows four values:
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
  - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value in  parentheses is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
- - Allowed Deviation how wideis the current "window". The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
+ - Allowed Deviation is the width of the Alarm Boundry. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
 ### Log
@@ -243,7 +243,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzY1NjQ1MCwtODU4NDg2ODI3LC0xNz
+eyJoaXN0b3J5IjpbLTM0MjcwMDY0MCwtODU4NDg2ODI3LC0xNz
 I2OTkxMzI1LDE1NDI0NDg1MTEsMjgxNjEwMDIsLTExMjg3NjIx
 ODEsLTEyNjI0NjE5MTVdfQ==
 -->
