@@ -3,7 +3,7 @@
 Initial work based on the [Filament Watch](https://github.com/rllynch/filament_watch) plugin by RLLynch.
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
 
-[[(#Using_Filament_Watch_reliably)
+[Are you sure you want to do this? ;)](#Using_Filament_Watch_reliably)
 
 ## Features
 
@@ -199,7 +199,9 @@ Notes:
 
 
 ## Using Filament Watch reliably
-I'll be honest with you...get ready. You very likely don't want to use Filament Watch. Boom. Filament monitoring seems like a no-brainier right? Throw in a rotary encoder to watch for failures and your print reliability goes up. Measure what moves and compare to what's told to move...simple right? Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can save 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects the true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmware with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer - relative vs. absolute mode? Linear vs. arc moves? Slow vs. fast moves? This means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees) some times not. even. close. At this point the brain melts.
+I'll be honest with you...get ready.
+You probably don't want to use Filament Watch. Boom.
+ Filament monitoring seems like a no-brainier right? Throw in a rotary encoder to watch for failures and your print reliability goes up. Measure what moves and compare to what's told to move...simple right? Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and yes, we're being honest - there are many more). Ok great, we can save 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even if it accurately detects the true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmware with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer - relative vs. absolute mode? Linear vs. arc moves? Slow vs. fast moves? This means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees) some times not. even. close. At this point the brain melts.
 
 So is all lost? No, not at all, but expectations must be set.
 You can assume similar prints will behave similarly, but don't assume that about different prints. What does "similar" mean?
@@ -218,6 +220,6 @@ So here's my suggestion for success with Filament Watch:
     M114 S600 P700
 * Don't rely on Filament Watch 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjE0MTA2NTYsMjgxNjEwMDIsLTExMj
-g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
+eyJoaXN0b3J5IjpbMTgwNzE2NDE0MywyODE2MTAwMiwtMTEyOD
+c2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
