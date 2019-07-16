@@ -211,7 +211,7 @@ Sometimes it's not. even. close. At this point the brain melts.
 
 So is all lost? No, not at all. But expectations must be set.
 
-Here are my suggestion for success with Filament Watch:
+#### Here are my suggestion for success with Filament Watch:
 * Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beeps for Marlin based printers:
 ```
 ; Beeps
@@ -225,18 +225,19 @@ M300 S600 P700
 	- Similar speed? Yes
 	- Same layer height? Yes
 	- Similar model? Yes. Huh? Why the model itself? Because a Benchy with its small intricate moves will look very different to Filament Watch than a full volume cube given all the same settings.
+	
 * Wide alarm tolerances are OK. The difference between a 25mm alarm boundary and a 50mm boundary might only delay an alarm by 30 seconds...which won't make a difference between a salvageable and failed print. But it might prevent a false alarm that does fail the print.
 * The same goes for the drift correction interval - a fast (say 120 second) drift correction might delay some alarms, but will make false alarms less likely.
 
 #### Wow, that was all doom and gloom. Is there any reason TO use Filament Watch?
 
-Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. But it can also be an important diagnostic tool. I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing. Now just to find a solution... ;)
+Yes. Obviously Filament Watch can and does detect out of filament, tangles, and clogged nozzles. **But it can also be an important diagnostic tool.** I've found some models (the Big Slow Perimeter file in the Parts\Test Parts directory, for example) that produce under-extrusion at some points in the model. On my D6, it will reliably under-extrude (extruder will skip steps) between 52 and 55% complete, and again on the last few percent. At this point it's printing slow (12.5mm/s moves) exterior walls at below 1mm/s extrusion rates. These defects are barely noticeable in the final print (until you know what to look for)...so they're not "failures", but I did learn something new about what my printer is actually doing. Now just to find a solution... ;)
 
 Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzcxNDU5MTgsLTg1ODQ4NjgyNywtMT
+eyJoaXN0b3J5IjpbLTEyNjQ0NjYzODQsLTg1ODQ4NjgyNywtMT
 cyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYy
 MTgxLC0xMjYyNDYxOTE1XX0=
 -->
