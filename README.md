@@ -207,12 +207,11 @@ Here's what they're not telling you. If the monitor is not SIGNIFICANTLY more re
 So is all lost? No, not at all, but expectations must be set.
 Here are my suggestion for success with Filament Watch:
 * Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beep code for Marlin based printers:
-
  
-
-    M114 S600 P700
-    M114 S400 P700
-    M114 S600 P700
+    M300 S600 P700
+    M300 S400 P700
+    M300 S600 P700
+    
 * Don't rely on Filament Watch until you've verified it with the same or similar models. What does "similar" mean?
 	- Same printer and slicer? Obviously
 	- Similar speed? Yes
@@ -226,6 +225,7 @@ Here are my suggestion for success with Filament Watch:
 Yes. You may 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjY5OTEzMjUsMTU0MjQ0ODUxMSwyOD
-E2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbMTkzMTgyMzU3MiwtMTcyNjk5MTMyNSwxNT
+QyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYyMTgxLC0xMjYyNDYx
+OTE1XX0=
 -->
