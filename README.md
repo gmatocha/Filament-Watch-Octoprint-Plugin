@@ -177,7 +177,7 @@ G1 Z{{ pause_position.z }} F1500
 ### The Graph:
 The graph on the Filament Watch tab shows four values:
 * GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queuing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
-* Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in settings). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
+* Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in [](#Configuration)settings). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
 * GCODE Forecast (yellow): This is Filament Watch's best guess where how much filament has been extruded in real-time. This is the line that Filament Watch is using when determining whether an alarm condition has occurred.
 * Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from settings plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. The instantaneous value is shown in Allowed Deviation field. If Measured Len exceeds this value, an alarm is triggered.
 
@@ -208,6 +208,6 @@ Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small 
 
 So here's my suggestion for success with Filament Watch:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxMTg2NjY0LC0xMTI4NzYyMTgxLC0xMj
+eyJoaXN0b3J5IjpbODQ4MzA0NTY4LC0xMTI4NzYyMTgxLC0xMj
 YyNDYxOTE1XX0=
 -->
