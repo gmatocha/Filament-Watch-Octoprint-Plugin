@@ -209,7 +209,7 @@ Here's what they're not telling you. If the monitor is not **significantly *more
 
 Sometimes it's not. even. close. At this point the brain melts.
 
-So is all lost? No, not at all, but expectations must be set.
+So is all lost? No, not at all. But expectations must be set.
 
 Here are my suggestion for success with Filament Watch:
 * Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beeps for Marlin based printers:
@@ -236,7 +236,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTQzNzEyLC04NTg0ODY4MjcsLTE3Mj
-Y5OTEzMjUsMTU0MjQ0ODUxMSwyODE2MTAwMiwtMTEyODc2MjE4
-MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbLTE4MzcxNDU5MTgsLTg1ODQ4NjgyNywtMT
+cyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAyLC0xMTI4NzYy
+MTgxLC0xMjYyNDYxOTE1XX0=
 -->
