@@ -209,10 +209,13 @@ Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small 
 So here's my suggestion for success with Filament Watch:
 * Until you have Filament Watch dialed in, set Alarm Action [in settings](#Configuration) to GCODE only. Then set the GCODE script to nothing or just beep (if your printer speaks) to notify you of an alarm. Here's some beep code for Marlin based printers:
 
-    enter code here
+ 
 
-* 
+    M114 S600 P700
+    M114 S400 P700
+    M114 S600 P700
+* Don't 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTk1Njg5NTIsMjgxNjEwMDIsLTExMj
-g3NjIxODEsLTEyNjI0NjE5MTVdfQ==
+eyJoaXN0b3J5IjpbOTU2MzE5MDAyLDI4MTYxMDAyLC0xMTI4Nz
+YyMTgxLC0xMjYyNDYxOTE1XX0=
 -->
