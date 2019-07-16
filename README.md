@@ -194,7 +194,7 @@ The graph on the Filament Watch tab shows four values:
 
 ### Maunal Buttons
 
- - Arm/Disarm - use this if you want to manually override the while the print is running.
+ - Arm/Disarm - use this if you want to manually override the arm state while the print is running.
  - Correct Drift Now - causes drift correction (set Measured Length to GCODE Forecast value) to be applied immediately. Useful if you're getting close to alarming, but you know there are no print problems.
 
 ### Log
@@ -248,8 +248,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODc4MjM0OSwzMTc0Njk0MTEsLTE3NT
-Q2NzExMCwtODU4NDg2ODI3LC0xNzI2OTkxMzI1LDE1NDI0NDg1
-MTEsMjgxNjEwMDIsLTExMjg3NjIxODEsLTEyNjI0NjE5MTVdfQ
-==
+eyJoaXN0b3J5IjpbNjMzMzYxNzAyLDMxNzQ2OTQxMSwtMTc1ND
+Y3MTEwLC04NTg0ODY4MjcsLTE3MjY5OTEzMjUsMTU0MjQ0ODUx
+MSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2MTkxNV19
 -->
