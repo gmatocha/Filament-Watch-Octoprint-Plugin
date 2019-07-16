@@ -174,18 +174,18 @@ G1 Z{{ pause_position.z }} F1500
 
 ## Using Filament Watch
 
+### The Graph:
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/GraphOnly.png)
 
-### The Graph:
 The graph on the Filament Watch tab shows four values:
 * GCODE Commanded (black): This is the extruded length sent to the printer. Note it deviates from reality because of queuing and the time the printer takes to execute the moves. On large slow prints this deviation can be quite large.
 * Measured Len (blue): This is the measurement from the rotary encoder, plus a drift correction that is applied on a regular interval (controlled by Drift Correction Interval in [settings](#Configuration)). You can see a drift correction here at -95 seconds. Drift Correction prevents false alarm triggers from accumulated small errors on large prints.
 * GCODE Forecast (yellow): This is Filament Watch's best guess of how much filament has been extruded in real-time. This is the line that Filament Watch uses when determining whether an alarm condition has occurred.
-* Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from [settings](#Configuration) plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. If Measured Length goes outside this value, an alarm is triggered. Note this value is dynamic; after a wide deviation is set, it will slowly (defaults to .1mm/sec) return to the Allow Deviation value.
-
-![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
+* Alarm Boundary (green area): GCode Forecast +/- Allowed Deviation from [settings](#Configuration) plus an additional deviation allowance calculated from the difference between the GCODE Forecast and CGODE Commanded. If Measured Length goes outside this value, an alarm is triggered. Note this value is dynamic; after a wide deviation allowance is set, it will slowly (defaults to .1 mm/sec) return to the Allow Deviation value.
 
 ### Values Table
+
+![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
  - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value in  parentheses is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
@@ -243,7 +243,7 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0MDE0ODgxLC0xNzU0NjcxMTAsLTg1OD
+eyJoaXN0b3J5IjpbMzE3NDY5NDExLC0xNzU0NjcxMTAsLTg1OD
 Q4NjgyNywtMTcyNjk5MTMyNSwxNTQyNDQ4NTExLDI4MTYxMDAy
 LC0xMTI4NzYyMTgxLC0xMjYyNDYxOTE1XX0=
 -->
