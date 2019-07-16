@@ -216,8 +216,9 @@ You probably don't want to use Filament Watch. Boom.
 
 Filament monitoring seems like a no-brainier right? *Throw in a rotary encoder....measure what moves and compare to what's supposed to move...simple right?*
 
-Here's what they're not telling you. If the monitor is not **significantly *more*** reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and since we're being honest - there are many it won't). Ok great, we can perhaps save half of those 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even when it accurately detects true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmwares with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer, the print settings, and the model itself.  All this means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees).
+Here's what they're not telling you. If the monitor is not **significantly *more*** reliable than your prints, it's worse than useless. Let's say 1 in 20 - 5% - of our prints fail because of a condition Filament Watch might detect (and since we're being honest - there are many it won't). Ok great, we can perhaps save half of those 1 in 20 prints. But if Filament Watch has the same error rate - false positive errors on 1 in 20 prints - then you will actually have MORE failed prints using Filament Watch even when it accurately detects true failures. For this reason Filament Watch has to be significantly more reliable than the printer itself to at least not be a hindrance. Throw in the fact that there are so many printers, so many different firmwares and motherboards with different caching buffer sizes and planning schemes, and so many physical configurations, and you start to get a sense of scale of this problem. But wait it gets worse - then there's the slicer, the print settings, and the model itself. 
 
+All this means what Octoprint sends is almost never synchronized with the real world (which is what Filament Watch sees).
 Sometimes it's not. even. close.
 
 So is all lost? No, not at all. But expectations must be set.
@@ -248,7 +249,8 @@ Enjoy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNzUzNzkzLDMxNzQ2OTQxMSwtMTc1ND
-Y3MTEwLC04NTg0ODY4MjcsLTE3MjY5OTEzMjUsMTU0MjQ0ODUx
-MSwyODE2MTAwMiwtMTEyODc2MjE4MSwtMTI2MjQ2MTkxNV19
+eyJoaXN0b3J5IjpbMTc2OTYzNjk4MiwzMTc0Njk0MTEsLTE3NT
+Q2NzExMCwtODU4NDg2ODI3LC0xNzI2OTkxMzI1LDE1NDI0NDg1
+MTEsMjgxNjEwMDIsLTExMjg3NjIxODEsLTEyNjI0NjE5MTVdfQ
+==
 -->
