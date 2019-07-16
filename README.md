@@ -7,14 +7,14 @@ Initial work based on the [Filament Watch](https://github.com/rllynch/filament_w
 
 * Pause, cancel, or just send GCODE when filament stops
 * Automatic search for attached Arduino/rotary encoder
-* Adjustible alarm boundries
+* Adjustable alarm boundaries
 * USB connection to Octoprint/Octopi
 
 ## Required sensor
 
 Using this plugin requires a rotary encoder sensor, and an Arduino micro controller to manage the encoder. The enclosure STL files are designed for a rotary encoder with a 38mm (dia) x 35.5mm body, 6mm shaft and capable of running on 5v. The pulses/revolution of the encoder is not very critical; the encoder is run in quadrature mode, so the rated P/R will be multiplied by four. So even with a 100 P/R encoder and a 23mm encoder wheel, the resolution would be under .2mm - more than enough for accurate monitoring.
 
-* Note if you do use an encoder with other than 600P/R, the DPM value in the Arduiono code needs to be modified. Future versions will make this configurable through Octoprint.
+* Note if you do use an encoder with other than 600P/R, the DPM value in the Arduino code needs to be modified. Future versions will make this configurable through Octoprint.
 
 
 ## Purchased Parts:
@@ -34,12 +34,12 @@ Using this plugin requires a rotary encoder sensor, and an Arduino micro control
 
 5. Optional: (depending on case you use) 608 ball bearing [[Amazon link]](https://www.amazon.com/Groove-Bearing-Bearings-Skateboard-Printer/dp/B07FGVFN6F). You don't need anything fancy here - don't spend money on ceramic or high abec bearings. Old dead ones will work as long as they roll smoothly.
 
-6. Optional: 30mm Rotary Encoder wheel [[Ali Express Link]](https://www.aliexpress.com/item/32974396980.html). The enclosure stl files below include a wheel stl that is designed for the enclosure, and is usually printed in a soft material like TPU/Ninjaflex. Manufacturered wheels are higher quality, but generally not so much as to affect Filament Watch. If you do use a manufactured wheel, choose a case that is designed it.
+6. Optional: 30mm Rotary Encoder wheel [[Ali Express Link]](https://www.aliexpress.com/item/32974396980.html). The enclosure stl files below include a wheel stl that is designed for the enclosure, and is usually printed in a soft material like TPU/Ninjaflex. Manufactured wheels are higher quality, but generally not so much as to affect Filament Watch. If you do use a manufactured wheel, choose a case that is designed it.
 
 
 ## Printed parts - Enclosures and wheels:
 
-There are seveal options for the encoder housing, depending on what will work with your setup.
+There are several options for the encoder housing, depending on what will work with your setup.
 
 1. RLLynch's [base and wheel](http://www.thingiverse.com/thing:936521) and optional [mini metro enclosure](http://www.thingiverse.com/thing:936519)
 
@@ -70,7 +70,7 @@ There are seveal options for the encoder housing, depending on what will work wi
 * Manually using this URL: https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin
 * From the [Octoprint Plugin repositry](https://plugins.octoprint.org/) (pending)
 
-2. Compile and flash arduino/filament_watch/filament_watch.ino into the Metro Mini using either the Arduino IDE, or the command line scripts shown below:
+2. Compile and flash Arduino/filament_watch/filament_watch.ino into the Metro Mini using either the Arduino IDE, or the command line scripts shown below:
 
 3. Connect the Metro Mini by USB to the computer running OctoPrint. Attach the wheel to the encoder and place it in the base. Feed the filament through the base.
 
@@ -79,10 +79,10 @@ There are seveal options for the encoder housing, depending on what will work wi
 
 After installation, configure the plugin via OctoPrint Settings interface.
 ![Settings](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Settings.png)
-* Allowed Deviation (mm): If monotired length is more or less than the forecast gcode, 
+* Allowed Deviation (mm): If monitored length is more or less than the forecast gcode, 
 
 ### Pause and Resume Scripts
-In addition to preventing wasted filament after a feed problem, in many cases Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use Octoprints GCODE Scrpting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
+In addition to preventing wasted filament after a feed problem, in many cases Filament Watch allows problems to be corrected without destroying the print in progress. To do this, you'll need to use OctoPrints GCODE Scripting feature to move the print head out of the way on pause, then return it to the exact same location when the print resumes.
 
 Copy the scripts below into the **After print job is paused**, and **Before print job is resumed** fields in *Octoprint->Settings->GCODE Scripts*
 
@@ -207,3 +207,6 @@ Similar layer height? Yes
 Similar model? Yes. Huh? Why the model itself? Because a Benchy with it's small intricate moves will look very different to Filament Watch than a full volume printed cube given all the same settings.
 
 So here's my suuggestion for success with Filament Watch:
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ4MjcyNzY1MF19
+-->
