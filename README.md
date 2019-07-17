@@ -190,7 +190,7 @@ The graph on the Filament Watch tab shows four values:
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
  - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value after the slash is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
- - Allowed Deviation is the width of the Alarm Boundry. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
+ - Allowed Deviation is the width of the Alarm Boundary. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
 ### Manual Buttons
