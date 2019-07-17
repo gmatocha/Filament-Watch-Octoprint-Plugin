@@ -3,7 +3,7 @@
 Initial work based on the [Filament Watch](https://github.com/rllynch/filament_watch) plugin by RLLynch.
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/Monitor.png)
 
-[Are you sure you want to do this? ;)](#Using_Filament_Watch_-_Reliably)
+[Are you sure you want to do this? ;)](#using-filament-watch---reliably)
 
 ## Features
 
