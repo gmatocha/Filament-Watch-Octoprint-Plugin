@@ -6,32 +6,34 @@ Placeholder.
 - FilamentWatchExtrudedInfo
 ## Returns:
 Dictionary containing the following values:
-- gcodeExtrudedlLen (float, mm):
+- **gcodeExtrudedlLen** (float, mm):
 	Latest extruded length per GCODE sent to the printer. Note, depending on queueing and planning in the printer, this length may not be acted upon for some time.
 	
-- measuredExtrudedLen (float, mm)
+- **measuredExtrudedLen** (float, mm):
 Current extruded length reading from the rotary encoder, plus drift correction.
 
-- gcodeForecastLen (float, mm)
+- **gcodeForecastLen** (float, mm):
 Filament Watches' best guess at the real current extruded length. This is what is used for comparisons to determine alarm conditions.
-- printing (bool)
+
+- **printing** (bool)
 Whether there is a print in progress.
 
-- armed (bool)
+- **armed** (bool):
 Whether Filament Watch Alarm has been armed. May be disarmed because the print hasn't run long enough yet, or manually disarmed by the user.
-- arm_alarm_in_sec (int, seconds):
+- **arm_alarm_in_sec** (int, seconds):
 How many seconds until the alarm will arm. Will be 0 once armed, or if disarmed by the user.
 
-- alarm (bool):
+- **alarm** (bool):
 Whether Filament Watch has triggered an alarm.
 
-- paused (bool):
+- **paused** (bool):
 Whether the print is paused.
 
-- alarmWindowWidth (float, mm):
+- **alarmWindowWidth** (float, mm):
+How far measuredExtrudedLen
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyMDE2NV19
+eyJoaXN0b3J5IjpbNjgxNTYyMTM4XX0=
 -->
