@@ -1,9 +1,8 @@
-Placeholder.
 
 # Filament Watch Helper Functions
 
 ## Function:
-- FilamentWatchExtrudedInfo
+- **FilamentWatchExtrudedInfo**
 ## Returns:
 Dictionary containing the following values:
 - **gcodeExtrudedlLen** (float, mm):
@@ -30,10 +29,10 @@ Whether Filament Watch has triggered an alarm.
 Whether the print is paused.
 
 - **alarmWindowWidth** (float, mm):
-How far measuredExtrudedLen can be from gcodeForecastLen before triggering an alarm. The base for this number is the *Allowed Deviation (mm)* in settings, plus the difference between commanded and forecast gcode. This widens the alarm window when there is large asynchronicity between sent gcode and the real world to prevent false alarms. This values decays back to Allowed Deviation a
+How far measuredExtrudedLen can be from gcodeForecastLen before triggering an alarm. The base for this number is the *Allowed Deviation (mm)* setting, plus the difference between commanded and forecast gcode. This widens the alarm window when there is large asynchronicity between sent gcode and the real world to prevent false alarms. This values decays back to Allowed Deviation at approximately .1mm/sec. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzIwNjk3NzJdfQ==
+eyJoaXN0b3J5IjpbLTE5OTQxMDI4ODldfQ==
 -->
