@@ -30,10 +30,10 @@ Whether Filament Watch has triggered an alarm.
 Whether the print is paused.
 
 - **alarmWindowWidth** (float, mm):
-How far measuredExtrudedLen can be from gcodeForecastLen before triggering an alarm. The base for this number is the *Allowed Deviation (mm)* in settings, plus the difference 
+How far measuredExtrudedLen can be from gcodeForecastLen before triggering an alarm. The base for this number is the *Allowed Deviation (mm)* in settings, plus the difference between commanded and forecast gcode. This widens the alarm window when there are large ascyncronicities between 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MzE1NzUwMV19
+eyJoaXN0b3J5IjpbNjM3NjY3ODE4XX0=
 -->
