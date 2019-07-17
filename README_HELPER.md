@@ -18,13 +18,16 @@ Filament Watches' best guess at the real current extruded length. This is what i
 Whether there is a print in progress.
 
 - armed (bool)
-Whether Filament Watch Alarm has been armed. May be disarmed because the print hasn't run long enough yet
-- arm_alarm_in_sec
-- alarm
+Whether Filament Watch Alarm has been armed. May be disarmed because the print hasn't run long enough yet, or manually disarmed by the user.
+- arm_alarm_in_sec (int, seconds):
+How many seconds until the alarm will arm. Will be 0 once armed, or if disarmed by the user.
+
+- alarm (bool):
+Whether the 
 - paused
 - alarmWindowWidth
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTY1ODk5Nl19
+eyJoaXN0b3J5IjpbMTE5Njk3MTcxNV19
 -->
