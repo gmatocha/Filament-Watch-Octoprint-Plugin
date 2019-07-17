@@ -8,9 +8,12 @@ Placeholder.
 Dictionary containing the following values:
 - gcodeExtrudedlLen (float, mm):
 	Latest extruded length per GCODE sent to the printer. Note, depending on queueing and planning in the printer, this length may not be acted upon for some time.
+	
 - measuredExtrudedLen (float, mm)
-C
-- gcodeForecastLen
+Current extruded length reading from the rotary encoder, plus drift correction.
+
+- gcodeForecastLen (float, mm)
+Filament Watches' best guess at the real current extruded length. This is what is used t
 - printing
 - armed
 - arm_alarm_in_sec
@@ -20,5 +23,5 @@ C
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg5MzQ2MTddfQ==
+eyJoaXN0b3J5IjpbNDEwNzQ1NTQwXX0=
 -->
