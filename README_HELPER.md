@@ -13,9 +13,12 @@ Dictionary containing the following values:
 Current extruded length reading from the rotary encoder, plus drift correction.
 
 - gcodeForecastLen (float, mm)
-Filament Watches' best guess at the real current extruded length. This is what is used t
-- printing
-- armed
+Filament Watches' best guess at the real current extruded length. This is what is used for comparisons to determine alarm conditions.
+- printing (bool)
+Whether there is a print in progress.
+
+- armed (bool)
+Whether Filament Watch Alarm has been armed. May be disarmed because the print hasn't run long enough yet
 - arm_alarm_in_sec
 - alarm
 - paused
@@ -23,5 +26,5 @@ Filament Watches' best guess at the real current extruded length. This is what i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNzQ1NTQwXX0=
+eyJoaXN0b3J5IjpbLTI2NTY1ODk5Nl19
 -->
