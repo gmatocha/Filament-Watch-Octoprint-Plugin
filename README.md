@@ -193,7 +193,7 @@ The graph on the Filament Watch tab shows four values:
  - Allowed Deviation is the width of the Alarm Boundry. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
-### Maunal Buttons
+### Manual Buttons
 
  - Arm/Disarm - use this if you want to manually override the arm state while the print is running.
  - Correct Drift Now - causes drift correction (set Measured Length to GCODE Forecast value) to be applied immediately. Useful if you're getting close to alarming, but you know there are no print problems.
