@@ -88,6 +88,8 @@ In addition to preventing wasted filament after a feed problem, in many cases Fi
 
 Copy the scripts below into the **After print job is paused**, and **Before print job is resumed** fields in *Octoprint->Settings->GCODE Scripts*
 
+###### Scripts below built from [here](https://community.octoprint.org/t/writing-a-resume-gcode-script-using-last-temperature/774/2), [here](https://community.octoprint.org/t/better-pause-function-in-octoprint/5331), and [the official scripting docs.](http://docs.octoprint.org/en/master/features/gcode_scripts.html?highlight=script#more-nifty-pause-and-resume). Thanks Gina and OutsoucedGuru for the excellent write-ups!
+
 ![GCODE Scripts](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/PauseResumeScript.png)
 
 
@@ -117,8 +119,7 @@ G1 X0 Y0
 {% endif %}
 
 ; play a jaunty tune (if your printer speaks)
-M300 S440 P400
-M300 S660 P400
+M300 S440 P1000
 M300 S660 P1000
 M300 S440 P1000
 M300 S660 P1000
@@ -188,7 +189,7 @@ The graph on the Filament Watch tab shows four values:
 ![Monitor](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/images/TableOnly.png)
 
  - Summary, Printing, Armed, and Alarm show the current state of Filament Watch.
- - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value in  parentheses is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
+ - GCODE Forecast, Commanded, and Measured length show the current values plotted on [the graph](#The_Graph:). The value after the slash is the instantaneous *extrusion rate* calculated over the last second. This can be useful when diagnosing under extrusion issues.
  - Allowed Deviation is the width of the Alarm Boundry. The value in parentheses is the current difference between Measured Length and the GCODE Forecast (ie, the current error).
  - Current Feedrate - the latest sent feedrate for the head (movement, not extrusion). Note this is the commanded rate, not the forecast rate, so it may not reflect reality at that moment in time. This can be useful when diagnosing under extrusion issues.
 
