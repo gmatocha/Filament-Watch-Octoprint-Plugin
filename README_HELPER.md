@@ -23,11 +23,15 @@ Whether Filament Watch Alarm has been armed. May be disarmed because the print h
 How many seconds until the alarm will arm. Will be 0 once armed, or if disarmed by the user.
 
 - alarm (bool):
-Whether the 
-- paused
-- alarmWindowWidth
+Whether Filament Watch has triggered an alarm.
+
+- paused (bool):
+Whether the print is paused.
+
+- alarmWindowWidth (float, mm):
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5Njk3MTcxNV19
+eyJoaXN0b3J5IjpbODYyMDE2NV19
 -->
