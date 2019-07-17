@@ -6,7 +6,8 @@ Placeholder.
 - FilamentWatchExtrudedInfo
 ## Returns:
 Dictionary containing the following values:
-- gcodeExtrudedlLen
+- gcodeExtrudedlLen (float)
+	Latest nt extruded length 
 - measuredExtrudedLen
 - gcodeForecastLen
 - printing
@@ -17,3 +18,6 @@ Dictionary containing the following values:
 - alarmWindowWidth
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU4MzUxMzk3Ml19
+-->
