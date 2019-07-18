@@ -11,6 +11,7 @@ Initial work based on the [Filament Watch](https://github.com/rllynch/filament_w
 * Automatic search for attached Arduino/rotary encoder
 * Adjustable alarm boundaries
 * USB connection to Octoprint/Octopi
+* Helper functions for other plugins that might want access to extrusion data. [Docs](https://github.com/gmatocha/Filament-Watch-Octoprint-Plugin/blob/master/README_HELPER.md)
 
 ## Required sensor
 
