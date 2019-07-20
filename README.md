@@ -29,7 +29,6 @@ Using this plugin requires a rotary encoder sensor, and an Arduino micro control
 
 2. Arduino controller supporting 5V and Serial over USB:
 * Verified: Adafruit Metro Mini 328 - 5V 16MHz [[Adafruit link]](https://www.adafruit.com/product/2590) [[Pinouts]](https://learn.adafruit.com/adafruit-metro-mini/pinouts)
-* Pending Verification: (7/2019) Itsy Bitsy 32u4 5V [[Adafuit link]](https://www.adafruit.com/product/3677)[[Pinouts]](https://learn.adafruit.com/introducting-itsy-bitsy-32u4/pinouts)
 
 3. USB A to Micro-B cable for Arduino [[Adafuit link]](https://www.adafruit.com/product/592)
 
@@ -51,7 +50,7 @@ There are several options for the encoder housing, depending on what will work w
 
 ## Wiring
 
-### Wiring instructions for the Metro Mini 328 or Itsy Bitsy 5v
+### Wiring instructions for the Metro Mini 328
   Optionally solder the header blocks first.
   (Note check your enclosure to see if it's compatible with the header blocks)
 
@@ -62,9 +61,6 @@ There are several options for the encoder housing, depending on what will work w
 
 ![](https://github.com/rllynch/filament_watch/blob/master/images/metro_mini_328_wiring.jpg)
 
-
-
-### Wiring instructions for the Itsy Bitsy (pending)
 
 
 ## Installation
