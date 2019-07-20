@@ -14,19 +14,19 @@ bool LoopingMode = false;
 int LoopTimer = 1000;
 
 bool ResultTypeMM = false; // false reports raw counter pos, true reports calculated mm traveled (requires WheelDia to be set)
-float posScaler = 1;
+float posScaler = 1.0;
 int   DPR = 2400;
+float WheelDia = 23.0;
 
 String inputString = "";
 bool stringComplete = false;
 
-
-int decode(int in1, int in2)
+inline int decode(int in1, int in2)
 {
   return (in2 << 1) | (in1 ^ in2);
 }
 
-void isr_common(int cur_in1, int cur_in2)
+inline void isr_common(int cur_in1, int cur_in2)
 {
   int cur_code = decode(cur_in1, cur_in2);
 
@@ -63,6 +63,10 @@ void setup() {
   pinMode(IN1, INPUT_PULLUP);           // set pin to input
   pinMode(IN2, INPUT_PULLUP);           // set pin to input
   Serial.begin(115200);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  
 
   last_in1 = digitalRead(IN1);
   last_in2 = digitalRead(IN2);
@@ -72,7 +76,7 @@ void setup() {
   attachInterrupt(1, isr2, CHANGE);
 }
 
-float CalcPos()
+inline float CalcPos()
 {
   if (ResultTypeMM)
     return pos * posScaler;
@@ -88,7 +92,7 @@ void loop() {
   {
     // This is is what we'll reply unless overriden below
     ReplyStr = "Set " + inputString;
-    
+
     if (inputString == "FINDFILAMENTWATCH")
     {
       ReplyStr = "FilamentWatchHere!";
@@ -123,7 +127,7 @@ void loop() {
     else if (inputString.startsWith("SETWHEELDIA:"))
     {
       inputString.replace("SETWHEELDIA:", "");
-      float WheelDia = inputString.toFloat();
+      WheelDia = inputString.toFloat();
 
       ResultTypeMM = true;
 
@@ -160,6 +164,7 @@ void loop() {
     }
     else if (inputString == "BLINK")
     {
+      pinMode(LED_BUILTIN, OUTPUT);
       for (int i = 0; i < 3; i++)
       {
         digitalWrite(LED_BUILTIN, HIGH);
@@ -191,10 +196,10 @@ void loop() {
       ReplyStr = "Unrecognized Command:" + inputString;
     }
 
-    
+
     if (ReplyStr.length())
       Serial.println(ReplyStr);
-    
+
     stringComplete = false;
     inputString = "";
   }
